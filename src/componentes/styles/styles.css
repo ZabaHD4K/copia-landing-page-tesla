@@ -1,0 +1,48 @@
+.App-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    padding: 10px; /* Añade un poco de padding si es necesario */
+    position: relative; /* Necesario para el posicionamiento absoluto de los hijos */
+}
+
+.iconoayuda,
+.mundo,
+.login {
+    transform: scale(1); /* Ajusta el tamaño de los elementos */
+    margin: 0 10px; /* Añade un margen entre los elementos */
+}
+
+.navizquierda {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    position: absolute; /* Posiciona el contenedor de forma absoluta */
+    left: 50%; /* Mueve el contenedor al centro horizontalmente */
+    transform: translateX(-50%); /* Ajusta el contenedor para que esté centrado */
+    height: auto;
+    gap: 10px; /* Añade un espacio entre los elementos */
+}
+
+.navderecha {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
+    position: absolute; /* Posiciona el contenedor de forma absoluta */
+    right: 10px; /* Ajusta la distancia desde la parte derecha */
+    height: auto;
+    gap: 10px; /* Añade un espacio entre los elementos */
+}
+
+.logoTesla {
+    width: 100px; /* Ajusta el ancho del logo */
+    height: auto; /* Mantiene la proporción del logo */
+    position: fixed; /* Posiciona el logo de forma fija */
+    top: 10px; /* Ajusta la distancia desde la parte superior */
+    left: 10px; /* Ajusta la distancia desde la parte izquierda */
+    z-index: 1000; /* Asegura que el logo esté por encima de otros elementos */
+}
